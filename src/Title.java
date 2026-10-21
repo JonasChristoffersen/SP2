@@ -1,18 +1,20 @@
 public abstract class Title {
     private String title;
     private String literatureType;
-    protected double rate;
+    protected final double rate = 0.067574;
+
+    //This class only needs logic inside calculateRoyalty()!
 
     public Title(String literatureType, String title) {
         this.literatureType = literatureType;
         this.title = title;
     }
 
-    public void calculateRoyalty() {
-
+    public double calculateRoyalty() {
+        return calculatePoints() * rate;
     }
 
-    public double convertLiteratureType() {
+    protected double convertLiteratureType() {
         switch (literatureType) {
             case "BI", "TE" -> {return 3;}
             case "LYRIK" -> {return 6;}
