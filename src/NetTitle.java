@@ -17,4 +17,5 @@ public abstract class NetTitle extends Title{
     private int getUseFactor() {
         return 0; //This get-method never gets used -> Therefor
     }
+
 }
