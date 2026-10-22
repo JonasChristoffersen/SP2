@@ -3,8 +3,6 @@ public abstract class Title {
     private String literatureType;
     protected final double rate = 0.067574;
 
-    //This class only needs logic inside calculateRoyalty()!
-
     public Title(String literatureType, String title) {
         this.literatureType = literatureType;
         this.title = title;

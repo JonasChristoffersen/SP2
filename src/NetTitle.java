@@ -11,22 +11,10 @@ public abstract class NetTitle extends Title{
     }
 
     protected double getPseudoCopies() {
-        return 0.0; //Fix return
+        return (reach * 5) + (availability * 0.5) + use;
     }
 
     private int getUseFactor() {
-        return 0; //Fix this return
-    }
-
-    protected int getReach() {
-        return reach;
-    }
-
-    public int getAvailability() {
-        return availability;
-    }
-
-    public int getUse() {
-        return use;
+        return 0; //This get-method never gets used -> Therefor
     }
 }

@@ -4,8 +4,6 @@ public class Author {
     private String name;
     private ArrayList<Title> titles = new ArrayList<>();
 
-    //This class only needs logic inside calculateRoyalties()!
-
     public Author(String name) {
         this.name = name;
     }
